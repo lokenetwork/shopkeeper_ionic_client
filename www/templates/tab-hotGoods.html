@@ -1,0 +1,34 @@
+<ion-view  view-title="所有爆款">
+  <ion-nav-bar class="bar-light has-tabs-top" >
+    <ion-nav-buttons side="left">
+      <a class="button button-clear button-dark item top_button_padding" >
+        <i class="ion-ios-search fill-icon"></i>
+      </a>
+    </ion-nav-buttons>
+
+    <ion-nav-buttons side="right" >
+      <a class="button button-clear button-dark item top_button_padding" ng-click="update_location()">
+        <i class="ion-ios-location-outline fill-icon" ></i>
+      </a>
+    </ion-nav-buttons>
+  </ion-nav-bar>
+    <div ng-include="'templates/base_location_info.html'"
+         ng-controller="LocationInfoCtrl">
+    </div>
+  <ion-content delegate-handle="goods_list_content" on-scroll="goods_list_scroll_action()">
+
+
+
+    <div class="h1">
+      shop_app
+    </div>
+
+
+
+
+
+  </ion-content>
+
+
+</ion-view>
+
